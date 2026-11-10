@@ -1,0 +1,53 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Python Bytecode and Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Testing and Linting Caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter Notebook Caches
+.ipynb_checkpoints/
+
+# Data and Raw Datasets
+data/raw/
+data/interim/
+data/downloads/
+*.tar.gz
+*.zip
+
+# Model Checkpoints & Large Training Artifacts
+checkpoints/
+models/checkpoints/
+runs/
+wandb/
+*.pt
+*.bin
+*.pth
+*.onnx
+
+# Temporary Experiment Outputs & Logs
+experiments/outputs/
+outputs/
+results/
+logs/
+tmp/
+
+# OS Specific
+.DS_Store
+Thumbs.db
