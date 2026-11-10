@@ -24,29 +24,43 @@ htmlcov/
 # Jupyter Notebook Caches
 .ipynb_checkpoints/
 
-# Data and Raw Datasets
+# Data and Datasets (Exclude raw and processed heavy datasets)
 data/raw/
 data/interim/
 data/downloads/
+data/processed/*.parquet
+*.parquet
+*.xlsx
 *.tar.gz
 *.zip
 
-# Model Checkpoints & Large Training Artifacts
+# Preserve metadata, checksums, and lockfiles
+!data/metadata/
+!data/processed/*.json
+!data/processed/*.sha256
+
+# Large Model Weights & Checkpoints (Exclude heavy binaries)
 checkpoints/
 models/checkpoints/
 runs/
 wandb/
+*.safetensors
+*.joblib
 *.pt
 *.bin
 *.pth
 *.onnx
 
-# Temporary Experiment Outputs & Logs
+# Temporary Experiment Outputs, Logs & Rasterized Slides
 experiments/outputs/
 outputs/
 results/
 logs/
 tmp/
+reports/mid_project/slides_png/
+
+# Old legacy presentation
+Explainable_Turkish_Implicit_Toxicity_Detection_(2).pptx
 
 # OS Specific
 .DS_Store
